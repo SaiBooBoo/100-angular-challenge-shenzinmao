@@ -1,0 +1,17 @@
+<section class="hero">
+  <h1>Welcome to the 100 Days Angular Challenge</h1>
+  <p>
+    Pick a day and ship a small feature. Keep it small, keep it daily, keep it fun.
+  </p>
+</section>
+
+<section class="day-grid">
+  <a
+    class="day-card"
+    *ngFor="let day of days"
+    [routerLink]="['/day', day]"
+  >
+    <span class="day-label">Day</span>
+    <span class="day-number">{{ day }}</span>
+  </a>
+</section>

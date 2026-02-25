@@ -1,0 +1,25 @@
+.day-shell {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.back-link {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.day-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.day-card h1 {
+  margin-bottom: 0.5rem;
+}
+
+.day-card p {
+  color: #4b5563;
+  margin: 0;
+}
