@@ -1,13 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { ToolbarComponent } from './pages/toolbar/toolbar.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterLink, RouterOutlet],
+  imports: [RouterOutlet, ToolbarComponent],
   templateUrl: './app.html',
-  styleUrls: ['./app.css']
+  styleUrl: './app.scss'
 })
-export class App {
-  protected readonly title = signal('angular-challenges');
-}
+export class App {}
