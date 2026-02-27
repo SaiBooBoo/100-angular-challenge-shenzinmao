@@ -6,20 +6,26 @@ $padding: 10px 20px;
 
 .accordion-container {
   @include box-shadow();
+  border-radius: 3px;
+  overflow: hidden;
 
   .item {
-    border-bottom: 1px solid rgb (221,221,221);
+    border-bottom: 1px solid rgb(221, 221, 221);
 
     .header {
       display: grid;
-      grid-template-columns: 1fr;
-      auto-flow: column;
+      grid-template-columns: 1fr auto;
       align-items: center;
       padding: $padding;
+      width: 100%;
+      border: 0;
+      background: transparent;
+      text-align: left;
+      cursor: pointer;
 
-      i{
+      i {
         color: $blue;
-        transition: all 0.3s;
+        transition: transform 0.25s ease-in-out;
 
         &.is-expanded {
           transform: rotate(-180deg);
@@ -27,13 +33,25 @@ $padding: 10px 20px;
       }
     }
 
-    .content {
-      padding: $padding;
-      display: none;
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .content-wrapper {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transition: grid-template-rows 0.25s ease-in-out, opacity 0.25s ease-in-out;
 
       &.is-expanded {
-        display: block;
+        grid-template-rows: 1fr;
+        opacity: 1;
       }
+    }
+
+    .content {
+      overflow: hidden;
+      padding: $padding;
     }
   }
 }

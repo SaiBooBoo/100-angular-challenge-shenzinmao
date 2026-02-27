@@ -1,9 +1,11 @@
+import { NgFor } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { AccordionItem } from './accordian-item-interface';
 
 @Component({
   selector: 'app-accordion',
-  imports: [],
+  standalone: true,
+  imports: [NgFor],
   templateUrl: './accordion.html',
   styleUrl: './accordion.scss',
 })
