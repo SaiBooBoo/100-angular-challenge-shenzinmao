@@ -4,10 +4,11 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { Card } from './card/card';
 import { Accordion } from "./accordion/accordion";
 import { AccordionItem } from './accordion/accordian-item-interface';
+import { ProgressBar } from "./progress-bar/progress-bar";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ToolbarComponent, Card, Accordion],
+  imports: [RouterOutlet, ToolbarComponent, Card, Accordion, ProgressBar],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -24,4 +25,6 @@ export class App {
       isExpanded: false
     }
   ]
+
+  public progressValue = 25;
 }

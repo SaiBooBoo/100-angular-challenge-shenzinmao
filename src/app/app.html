@@ -9,6 +9,13 @@
 </app-toolbar>
 
 <main>
+  <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Progress bar'" [subTitle]="'Components'">
+    <app-progress-bar body [value]="progressValue">
+
+    </app-progress-bar>
+    <button footer (click)="progressValue = 75;">Update Progress</button>
+  </app-card>
+
   <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Accordion'" [subTitle]="'Components'">
     <app-accordion body [items]="accordionItems">
 
