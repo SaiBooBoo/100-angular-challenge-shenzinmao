@@ -1,7 +1,7 @@
 <div title="rating">
 <i class="fas fa-star"  *ngFor="let star of fullStars">
 </i>
-<i class="fas fa-star-hal-alt" *ngFor="hasHalfStar"></i>
-<i class="fas fa-star-" *ngFor="let star of emptyStar" ></i>
+<i class="fas fa-star-half-alt" *ngIf="hasHalfStar"></i>
+<i class="fas fa-star" *ngFor="let star of emptyStar" ></i>
 
 </div>
