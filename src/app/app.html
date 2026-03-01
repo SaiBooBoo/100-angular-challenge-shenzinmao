@@ -9,6 +9,10 @@
 </app-toolbar>
 
 <main>
+
+  <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Star Rating Component'" [subTitle]="'Components'">
+    <app-star-rating body [rating]="4.75"></app-star-rating>
+  </app-card>
   <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Progress bar'" [subTitle]="'Components'">
     <app-progress-bar body [value]="progressValue">
 
