@@ -15,18 +15,4 @@ import { TopOfPage } from "./top-of-page/top-of-page";
   styleUrl: './app.scss'
 })
 export class App {
-  public accordionItems: AccordionItem[] = [
-    {
-      title: 'Example 1',
-      content: 'Example Content 1',
-      isExpanded: false,
-    },
-    {
-      title: 'Example 2',
-      content: 'Example Content 2',
-      isExpanded: false
-    }
-  ]
-
-  public progressValue = 25;
 }
