@@ -7,10 +7,11 @@ import { DirectiveDocumentation } from './directive/directive-documentation/dire
 import { PipeDocumentation } from './pipe/pipe-documentation/pipe-documentation';
 import { ServiceDocumentation } from './service/service-documentation/service-documentation';
 
+
 export const APP_ROUTES: Routes = [
   { path: '', component: ComponentDocumentation },
   { path: 'directives', component: DirectiveDocumentation },
-  { path: 'pipes', component: PipeDocumentation },
+  { path: 'pipes', loadChildren: () => import('./pipe/pipes-module').then((m) => m.PipesModule) },
   { path: 'services', component: ServiceDocumentation },
 ];
 
