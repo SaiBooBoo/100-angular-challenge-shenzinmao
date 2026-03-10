@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { PIPES_ROUTES } from './pipes.routes';
 
 
-
+// routing
 @NgModule({
   declarations: [],
   imports: [
