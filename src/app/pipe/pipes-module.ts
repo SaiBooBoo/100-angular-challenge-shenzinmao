@@ -6,6 +6,7 @@ import { PIPES_ROUTES } from './pipes.routes';
 
 
 // routing
+// truncate pipe
 @NgModule({
   declarations: [],
   imports: [
