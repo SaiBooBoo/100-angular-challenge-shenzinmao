@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  padding: 1rem;
+}
+
+app-card {
+  margin-bottom: 1.25rem;
+}
+
+app-card:last-child{
+  margin-bottom: 0;
+}

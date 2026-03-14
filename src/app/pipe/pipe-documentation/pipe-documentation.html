@@ -1,1 +1,23 @@
-<p>pipe-documentation works!</p>
+<app-banner-cut-out [title]="'Pipes'" [imageUrl]="'assets/back-4.jpg'">
+
+</app-banner-cut-out>
+
+<hr>
+<app-card [iconClasses] ="'fas fa-info-circle'" [title]="'Truncate'" [subTitle]="'Pipes'">
+  <p body>
+    {{
+      '
+      Lorem Ipsum was first used as standard filler text in the 1500s, when an unknown typesetter took a galley of type and scrambled it to make a type specimen book. Its purpose was to provide a natural-looking block of text for printing layouts and design mockups without distracting the viewer with meaningful content. Because the Latin letters and word distribution resemble natural language, it gives a more realistic sense of typography than repeating characters or simple dummy text.'
+    }}
+  </p>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Sort By Key'" [subTitle]="'Pipes'">
+  <div body>
+    <h5>String Ascending</h5>
+    <p *ngFor="let obj of objectArray | sortByKey : 'content'">
+      {{ obj.content }}
+    </p>
+  </div>
+
+</app-card>
