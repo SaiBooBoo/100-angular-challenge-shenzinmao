@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PipeDocumentation } from '../pipe/pipe-documentation/pipe-documentation';
 import { RouterModule } from '@angular/router';
 import { SERVICE_ROUTES } from './services.routes';
+import { ServiceDocumentation } from './services/service-documentation/service-documentation';
 
 
 
@@ -10,7 +11,7 @@ import { SERVICE_ROUTES } from './services.routes';
   declarations: [],
   imports: [
     CommonModule,
-    PipeDocumentation,
+    ServiceDocumentation,
     RouterModule.forChild(SERVICE_ROUTES)
   ]
 })

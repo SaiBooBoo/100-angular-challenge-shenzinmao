@@ -9,5 +9,11 @@ import { BannerCutOut } from '../../banner-cut-out/banner-cut-out';
   styleUrl: './pipe-documentation.scss',
 })
 export class PipeDocumentation {
-
+  objectArray = [
+    { content: 'Apple' },
+    { content: 'Banana' },
+    { content: 'Cherry' },
+    { content: 'Date' },
+    { content: 'Elderberry' }
+  ];
 }
