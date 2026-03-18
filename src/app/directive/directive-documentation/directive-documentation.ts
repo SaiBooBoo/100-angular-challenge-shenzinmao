@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './directive-documentation.scss',
 })
 export class DirectiveDocumentation {
-
+ // something about the directiveDocumentation
 }

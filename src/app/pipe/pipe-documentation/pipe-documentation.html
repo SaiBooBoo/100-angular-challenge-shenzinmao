@@ -16,11 +16,5 @@
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Sort By Key'" [subTitle]="'Pipes'">
-  <div body>
-    <h5>String Ascending</h5>
-    <p *ngFor="let obj of objectArray | sortByKey : 'content'">
-      {{ obj.content }}
-    </p>
-  </div>
 
 </app-card>
