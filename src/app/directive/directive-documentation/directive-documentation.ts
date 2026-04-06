@@ -11,4 +11,3 @@ export class DirectiveDocumentation {
  // something about the directiveDocumentation
 }
 
-// I'm doing it
