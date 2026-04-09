@@ -4,10 +4,8 @@ import { AccordionItem } from './accordian-item-interface';
 
 @Component({
   selector: 'app-accordion',
-  standalone: true,
-  imports: [NgFor],
   templateUrl: './accordion.html',
-  styleUrl: './accordion.scss',
+  styleUrls: ['./accordion.scss'],
 })
 export class Accordion {
   @Input() public items: AccordionItem[] = [];
