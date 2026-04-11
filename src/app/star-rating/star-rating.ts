@@ -1,11 +1,9 @@
 import { Component, Input } from '@angular/core';
-import {NgFor, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-star-rating',
-  imports: [NgFor, NgIf],
   templateUrl: './star-rating.html',
-  styleUrl: './star-rating.scss',
+  styleUrls: ['./star-rating.scss'],
 })
 export class StarRating {
   @Input() public rating = 5;
@@ -23,7 +21,6 @@ export class StarRating {
   public get emptyStar(): number[] {
     const highestRating = 5;
     const totalEmptyStars = Math.floor(highestRating - this.rating);
-
     return Array(totalEmptyStars).fill(0);
   }
 }

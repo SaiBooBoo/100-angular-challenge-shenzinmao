@@ -1,12 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-banner-cut-out',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './banner-cut-out.html',
-  styleUrl: './banner-cut-out.scss',
+  styleUrls: ['./banner-cut-out.scss'],
 })
 export class BannerCutOut {
   @Input() public title = '';

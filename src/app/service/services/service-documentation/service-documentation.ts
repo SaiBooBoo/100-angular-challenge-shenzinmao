@@ -2,10 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-service-documentation',
-  imports: [],
   templateUrl: './service-documentation.html',
-  styleUrl: './service-documentation.scss',
+  styleUrls: ['./service-documentation.scss'],
 })
-export class ServiceDocumentation {
-
-}
+export class ServiceDocumentation {}

@@ -3,15 +3,22 @@ import { NgModule } from "@angular/core";
 import { ComponentDocumentation } from "./component-documentation/component-documentation";
 import { RouterModule } from "@angular/router";
 import { COMPONENT_ROUTES } from "./component.routes";
+import { Accordion } from "../accordion/accordion";
+import { ProgressBar } from "../progress-bar/progress-bar";
+import { StarRating } from "../star-rating/star-rating";
+import { SharedModule } from "../shared/shared.module";
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ComponentDocumentation,
+    Accordion,
+    ProgressBar,
+    StarRating
+  ],
   imports: [
     CommonModule,
-    ComponentDocumentation,
+    SharedModule,
     RouterModule.forChild(COMPONENT_ROUTES)
   ]
 })
-export class ComponentsModule {
-
-}
+export class ComponentsModule {}

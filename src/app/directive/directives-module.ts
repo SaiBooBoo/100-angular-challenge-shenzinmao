@@ -4,14 +4,13 @@ import { DirectiveDocumentation } from './directive-documentation/directive-docu
 import { RouterModule } from '@angular/router';
 import { DIRECTIVE_ROUTES } from './directive.routes';
 
-
-
 @NgModule({
-  declarations: [],
+  declarations: [
+    DirectiveDocumentation
+  ],
   imports: [
     CommonModule,
-    DirectiveDocumentation,
     RouterModule.forChild(DIRECTIVE_ROUTES)
   ]
 })
-export class DirectivesModule { }
+export class DirectivesModule {}

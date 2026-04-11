@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ProgressBar } from './progress-bar';
 
 describe('ProgressBar', () => {
@@ -8,7 +7,7 @@ describe('ProgressBar', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProgressBar]
+      declarations: [ProgressBar]
     })
     .compileComponents();
 

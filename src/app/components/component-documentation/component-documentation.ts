@@ -8,13 +8,8 @@ import { AccordionItem } from '../../accordion/accordian-item-interface';
 
 @Component({
   selector: 'app-component-documentation',
-  imports: [CommonModule,
-    Card,
-    Accordion,
-    ProgressBar,
-    StarRating],
   templateUrl: './component-documentation.html',
-  styleUrl: './component-documentation.scss',
+  styleUrls: ['./component-documentation.scss'],
 })
 export class ComponentDocumentation {
   public accordionItems: AccordionItem[] = [

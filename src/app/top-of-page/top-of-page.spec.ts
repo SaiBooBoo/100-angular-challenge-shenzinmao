@@ -8,7 +8,7 @@ describe('TopOfPage', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TopOfPage]
+      declarations: [TopOfPage]
     })
     .compileComponents();
 
