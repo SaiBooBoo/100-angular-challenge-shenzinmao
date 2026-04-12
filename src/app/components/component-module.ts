@@ -7,13 +7,15 @@ import { Accordion } from "../accordion/accordion";
 import { ProgressBar } from "../progress-bar/progress-bar";
 import { StarRating } from "../star-rating/star-rating";
 import { SharedModule } from "../shared/shared.module";
+import { LoaderComponentComponent } from "../loader-component/loader-component.component";
 
 @NgModule({
   declarations: [
     ComponentDocumentation,
     Accordion,
     ProgressBar,
-    StarRating
+    StarRating,
+    LoaderComponentComponent
   ],
   imports: [
     CommonModule,

@@ -1,6 +1,10 @@
  <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Top of Page'" [subTitle]="'Components'">
    <p body>Scroll down 400px down the page to render.</p>
 </app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Loader'" [subTitle]="'Components'">
+  <app-loader-component body [isLoading]="true"></app-loader-component>
+</app-card>
   <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Star Rating Component'" [subTitle]="'Components'">
     <app-star-rating body [rating]="4.75 "></app-star-rating>
   </app-card>

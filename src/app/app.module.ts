@@ -10,7 +10,7 @@ import { TopOfPage } from "./top-of-page/top-of-page";
   declarations: [
     App,
     ToolbarComponent,
-    TopOfPage
+    TopOfPage,
   ],
   imports: [
     BrowserModule,
