@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoaderComponent  {
 
-
+@Input() public isLoading = false;
+@Input() public loaderType: LoaderType = LoaderType.Circular;
 
 }
