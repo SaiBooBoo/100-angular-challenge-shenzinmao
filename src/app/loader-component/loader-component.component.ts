@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LoaderType } from '../components/loader/models/loader-type.enum';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-loader-component',
@@ -7,13 +9,41 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LoaderComponentComponent implements OnInit {
 ngOnInit(): void {
-  // You can perform any initialization logic here if needed.
-  // For a loader component, you might not need to do anything,
-  // but you could log or set up additional state if required.
-  // Example:
-  // console.log('LoaderComponentComponent initialized. isloading:', this.isloading);
+ if(this.loaderType === LoaderType.Loading) {
+  this.updateLoaderPeriods();
+ }
 }
 
  @Input() public isLoading = false;
+ @Input() public loaderType: LoaderType = LoaderType.Loading;
+  public LoaderType = LoaderType;
+
+  public get loadingText(): string {
+    return `${this.loading}${this.loadingPeriods}`;
+  }
+  private loading = 'Loading';
+  private loadingPeriods = '.\0\0';
+
+  private updateLoaderPeriods() {
+    let currentStep = 0;
+
+    setInterval(() => {
+      switch(currentStep % 3) {
+        case 0:
+        this.loadingPeriods = '..';
+        currentStep++;
+        break;
+        case 1:
+        this.loadingPeriods = '...';
+        currentStep++;
+        break;
+        case 2:
+        this.loadingPeriods = '.';
+        currentStep = 0;
+        break;
+      }
+    }, 500)
+
+  }
 
 }

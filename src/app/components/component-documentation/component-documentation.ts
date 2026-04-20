@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Card } from '../../card/card';
-import { Accordion } from '../../accordion/accordion';
-import { ProgressBar } from '../../progress-bar/progress-bar';
-import { StarRating } from '../../star-rating/star-rating';
+import { Component, Input } from '@angular/core';
 import { AccordionItem } from '../../accordion/accordian-item-interface';
+import { LoaderType } from '../loader/models/loader-type.enum';
+
 
 @Component({
   selector: 'app-component-documentation',
   templateUrl: './component-documentation.html',
   styleUrls: ['./component-documentation.scss'],
+
 })
 export class ComponentDocumentation {
   public accordionItems: AccordionItem[] = [
@@ -25,5 +23,8 @@ export class ComponentDocumentation {
     },
   ];
 
+  
+
   public progressValue = 25;
+  public loaderType = LoaderType.Loading;
 }
