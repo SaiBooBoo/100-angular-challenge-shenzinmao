@@ -3,11 +3,11 @@
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter Post'" [subTitle]="'Components'">
-  <app-twitter-post-component> </app-twitter-post-component>
+  <app-twitter-post-component body> </app-twitter-post-component>
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Loader'" [subTitle]="'Components'">
-  <app-loader-component body [isLoading]="true" [loaderType]="loaderType"></app-loader-component>
+  <app-loader-component body [isLoading]="false" [loaderType]="loaderType"></app-loader-component>
 </app-card>
   <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Star Rating Component'" [subTitle]="'Components'">
     <app-star-rating body [rating]="4.75 "></app-star-rating>

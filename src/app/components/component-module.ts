@@ -8,6 +8,7 @@ import { ProgressBar } from "../progress-bar/progress-bar";
 import { StarRating } from "../star-rating/star-rating";
 import { SharedModule } from "../shared/shared.module";
 import { LoaderComponentComponent } from "../loader-component/loader-component.component";
+import { TwitterPostComponentComponent } from "../twitter-post-component/twitter-post-component.component";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoaderComponentComponent } from "../loader-component/loader-component.c
     Accordion,
     ProgressBar,
     StarRating,
-    LoaderComponentComponent
+    LoaderComponentComponent,
+    TwitterPostComponentComponent
   ],
   imports: [
     CommonModule,
