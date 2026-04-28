@@ -31,5 +31,4 @@ relat4ed=pizzapokerguy&url=${route}`;
   }
 }
 
-// holy grail
 
