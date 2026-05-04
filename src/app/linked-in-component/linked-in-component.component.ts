@@ -20,5 +20,4 @@ export class LinkedInComponentComponent implements OnInit {
     return `${base}${currentSite}`
   }
 
-  // basic site
 }
