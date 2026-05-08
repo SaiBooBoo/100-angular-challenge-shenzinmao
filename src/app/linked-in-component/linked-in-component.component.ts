@@ -19,5 +19,5 @@ export class LinkedInComponentComponent implements OnInit {
 
     return `${base}${currentSite}`
   }
- // never wanted to be the king
+ 
 }
