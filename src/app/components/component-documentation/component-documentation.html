@@ -1,5 +1,29 @@
 <h1>Components</h1>
 <hr>
+
+ <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Debounce Search'" [subTitle]="'Components'">
+   <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)">
+
+    </app-debounce-search>
+</app-card>
+
+ <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Rich Text'" [subTitle]="'Components'">
+   <div body>
+     <h3>Good Example</h3>
+     <app-rich-text [htmlText]="'<p>Hello World</p>'"></app-rich-text>
+    </div>
+
+    <div body>
+     <h3>Empty Example</h3>
+     <app-rich-text [htmlText]="'     '"></app-rich-text>
+    </div>
+
+    <div body>
+     <h3>Bad HTML Example</h3>
+     <app-rich-text [htmlText]="'<p>Hello World'"></app-rich-text>
+    </div>
+</app-card>
+
  <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Toggle'" [subTitle]="'Components'">
    <app-toggle [isOn]="toggleValue" body>
     .</app-toggle>

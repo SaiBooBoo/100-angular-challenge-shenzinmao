@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { ComponentDocumentation } from "./component-documentation/component-documentation";
 import { RouterModule } from "@angular/router";
 import { COMPONENT_ROUTES } from "./component.routes";
@@ -13,6 +14,8 @@ import { LoaderComponentComponent } from "./loader-component/loader-component.co
 import { ModalComponent } from "./modal/modal.component";
 import { QuoteComponent } from "./quote/quote.component";
 import { ToggleComponent } from "./toggle/toggle.component";
+import { RichTextComponent } from "./rich-text/rich-text.component";
+import { DebounceSearchComponent } from "./debounce-search/debounce-search.component";
 
 
 @NgModule({
@@ -26,10 +29,13 @@ import { ToggleComponent } from "./toggle/toggle.component";
     LinkedInComponentComponent,
     ModalComponent,
     QuoteComponent,
-    ToggleComponent
+    ToggleComponent,
+    RichTextComponent,
+    DebounceSearchComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
     RouterModule.forChild(COMPONENT_ROUTES)
   ]
