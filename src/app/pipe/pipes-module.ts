@@ -7,6 +7,7 @@ import { TruncatePipe } from './truncate/truncate.pipe';
 import { SharedModule } from '../shared/shared.module';
 import { CreditCardFormatterPipeComponent } from './credit-card-formatter-pipe/credit-card-formatter-pipe.component';
 import { FlattenPipeModule } from './flatten.pipe/flatten.pipe.module';
+import { FilerTermPipe } from './flatten.pipe/filer-term.pipe';
 
 
 // routing
@@ -16,7 +17,8 @@ import { FlattenPipeModule } from './flatten.pipe/flatten.pipe.module';
      PipeDocumentation,
      TruncatePipe,
      CreditCardFormatterPipeComponent,
-     FlattenPipeModule
+     FlattenPipeModule,
+     FilerTermPipe
   ],
   imports: [
     CommonModule,
