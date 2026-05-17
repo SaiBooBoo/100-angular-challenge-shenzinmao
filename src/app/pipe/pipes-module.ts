@@ -6,6 +6,7 @@ import { PIPES_ROUTES } from './pipes.routes';
 import { TruncatePipe } from './truncate/truncate.pipe';
 import { SharedModule } from '../shared/shared.module';
 import { CreditCardFormatterPipeComponent } from './credit-card-formatter-pipe/credit-card-formatter-pipe.component';
+import { FlattenPipeModule } from './flatten.pipe/flatten.pipe.module';
 
 
 // routing
@@ -14,7 +15,8 @@ import { CreditCardFormatterPipeComponent } from './credit-card-formatter-pipe/c
   declarations: [
      PipeDocumentation,
      TruncatePipe,
-     CreditCardFormatterPipeComponent
+     CreditCardFormatterPipeComponent,
+     FlattenPipeModule
   ],
   imports: [
     CommonModule,
