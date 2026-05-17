@@ -1,9 +1,12 @@
 <h1>Components</h1>
 <hr>
 
+<app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Search List'" [subTitle]="'Components'">
+   <app-search-list body [items]="['United States', 'Mexico', 'United Arab Emirates']">
+    </app-search-list>
+</app-card>
  <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Debounce Search'" [subTitle]="'Components'">
    <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)">
-
     </app-debounce-search>
 </app-card>
 

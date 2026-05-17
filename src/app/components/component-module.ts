@@ -16,6 +16,8 @@ import { QuoteComponent } from "./quote/quote.component";
 import { ToggleComponent } from "./toggle/toggle.component";
 import { RichTextComponent } from "./rich-text/rich-text.component";
 import { DebounceSearchComponent } from "./debounce-search/debounce-search.component";
+import { SearchListComponent } from "./search-list/search-list.component";
+import { FilerTermPipeModule } from "../pipe/flatten.pipe/filer-term-pipe.module";
 
 
 @NgModule({
@@ -31,12 +33,14 @@ import { DebounceSearchComponent } from "./debounce-search/debounce-search.compo
     QuoteComponent,
     ToggleComponent,
     RichTextComponent,
-    DebounceSearchComponent
+    DebounceSearchComponent,
+    SearchListComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     SharedModule,
+    FilerTermPipeModule,
     RouterModule.forChild(COMPONENT_ROUTES)
   ]
 })
