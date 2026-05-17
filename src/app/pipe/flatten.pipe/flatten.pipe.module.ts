@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 @Pipe ({
   name: 'appFlatten',
+  pure: false
 })
 export class FlattenPipeModule implements PipeTransform {
   public transform(values: any[]): any[] {

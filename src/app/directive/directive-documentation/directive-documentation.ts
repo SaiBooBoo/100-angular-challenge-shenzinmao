@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './directive-documentation.html',
   styleUrls: ['./directive-documentation.scss'],
 })
-export class DirectiveDocumentation {}
+export class DirectiveDocumentation {
+
+  public log(): void {
+    console.log("Hello World!");
+  }
+}
