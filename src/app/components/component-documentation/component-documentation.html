@@ -1,5 +1,10 @@
 <h1>Components</h1>
 <hr>
+ <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Toggle'" [subTitle]="'Components'">
+   <app-toggle [isOn]="toggleValue" body>
+    .</app-toggle>
+</app-card>
+
    <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Quote'" [subTitle]="'Components'">
    <app-quote body [quote]="'Study Hard, Work Hard'"
    [author]="'Sai Shen Zin Mao'"
