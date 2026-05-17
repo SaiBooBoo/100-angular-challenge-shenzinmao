@@ -1,3 +1,13 @@
+<h1>Components</h1>
+<hr>
+   <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Quote'" [subTitle]="'Components'">
+   <app-quote body [quote]="'Study Hard, Work Hard'"
+   [author]="'Sai Shen Zin Mao'"
+   [occupation]="'Software Engineer, Educator'">
+
+   </app-quote>
+</app-card>
+
   <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Model'" [subTitle]="'Components'">
    <div body>
     <app-modal [title]="'Modal Example'" #modal>

@@ -11,6 +11,7 @@ import { TwitterPostComponentComponent } from "./twitter-post-component/twitter-
 import { LinkedInComponentComponent } from "./linked-in-component/linked-in-component.component";
 import { LoaderComponentComponent } from "./loader-component/loader-component.component";
 import { ModalComponent } from "./modal/modal.component";
+import { QuoteComponent } from "./quote/quote.component";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ModalComponent } from "./modal/modal.component";
     LoaderComponentComponent,
     TwitterPostComponentComponent,
     LinkedInComponentComponent,
-    ModalComponent
+    ModalComponent,
+    QuoteComponent
   ],
   imports: [
     CommonModule,
