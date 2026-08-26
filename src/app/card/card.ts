@@ -10,3 +10,4 @@ export class Card {
   @Input() public subTitle = '';
   @Input() public iconClasses = '';
 }
+// get
