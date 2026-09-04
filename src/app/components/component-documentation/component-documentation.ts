@@ -10,6 +10,13 @@ import { LoaderType } from '../loader/models/loader-type.enum';
 
 })
 export class ComponentDocumentation {
+  public tabs = [
+    { title: 'Paging', active: true },
+    { title: 'Counter', active: false }
+  ];
+
+  public selectedTab = 0;
+
   public accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',

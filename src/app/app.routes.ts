@@ -5,4 +5,5 @@ export const APP_ROUTES: Routes = [
   { path: 'directives', loadChildren: () =>  import('./directive/directives-module').then((m) => m.DirectivesModule)},
   { path: 'pipes', loadChildren: () => import('./pipe/pipes-module').then((m) => m.PipesModule) },
   { path: 'services', loadChildren: () => import('./service/services-module').then((m) => m.ServicesModule) },
+  { path: 'other', loadChildren: () => import('./other/other.module').then((m) => m.OtherModule) }
 ];

@@ -18,6 +18,9 @@ import { RichTextComponent } from "./rich-text/rich-text.component";
 import { DebounceSearchComponent } from "./debounce-search/debounce-search.component";
 import { SearchListComponent } from "./search-list/search-list.component";
 import { FilerTermPipeModule } from "../pipe/flatten.pipe/filer-term-pipe.module";
+import { TabsComponent } from "./tabs/tabs.component";
+import { PagingComponent } from "./paging/paging.component";
+import { CounterComponent } from "./counter/counter.component";
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { FilerTermPipeModule } from "../pipe/flatten.pipe/filer-term-pipe.module
     ToggleComponent,
     RichTextComponent,
     DebounceSearchComponent,
-    SearchListComponent
+    SearchListComponent,
+    TabsComponent,
+    PagingComponent,
+    CounterComponent
   ],
   imports: [
     CommonModule,

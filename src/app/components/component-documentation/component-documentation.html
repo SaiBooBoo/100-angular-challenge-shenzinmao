@@ -1,6 +1,13 @@
 <h1>Components</h1>
 <hr>
 
+<app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Tabs'" [subTitle]="'Components'">
+   <app-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event;">
+      <app-paging *ngIf="selectedTab === 0" [totalItems]="200"> </app-paging>
+      <app-counter *ngIf="selectedTab === 1"></app-counter>
+  </app-tabs>
+</app-card>
+
 <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Search List'" [subTitle]="'Components'">
    <app-search-list body [items]="['United States', 'Mexico', 'United Arab Emirates']">
     </app-search-list>
@@ -10,7 +17,8 @@
     </app-debounce-search>
 </app-card>
 
- <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Rich Text'" [subTitle]="'Components'">
+ <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Rich Text'" [subTitle]="'Components'">Property 'selectedTab' does not exist on type 'ComponentDocumentation'.
+component-documentation.ts(8, 16): Error occurs in the template of component ComponentDocumentation.
    <div body>
      <h3>Good Example</h3>
      <app-rich-text [htmlText]="'<p>Hello World</p>'"></app-rich-text>

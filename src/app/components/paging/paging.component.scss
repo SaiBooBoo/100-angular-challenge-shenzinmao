@@ -1,0 +1,40 @@
+.paging {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+
+  button {
+    min-width: 32px;
+    height: 32px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 8px;
+
+    &:hover:not(:disabled) {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    &.active {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.paging-info {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #666;
+}
