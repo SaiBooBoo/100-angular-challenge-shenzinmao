@@ -1,5 +1,9 @@
 <h1>Components</h1>
 <hr>
+<app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Sort Table'" [subTitle]="'Components'">
+  <app-sort-table body>
+   </app-sort-table>
+</app-card>
 
 <app-card [iconClasses]="'fa-solid fa-circle-info'" [title]="'Tabs'" [subTitle]="'Components'">
    <app-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event;">

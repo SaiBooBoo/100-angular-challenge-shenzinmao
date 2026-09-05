@@ -22,6 +22,7 @@ import { TabsComponent } from "./tabs/tabs.component";
 import { PagingComponent } from "./paging/paging.component";
 import { CounterComponent } from "./counter/counter.component";
 import { SimpleTableComponent } from "./simple-table/simple-table.component";
+import { SortTableComponent } from "./sort-table/sort-table.component";
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { SimpleTableComponent } from "./simple-table/simple-table.component";
     TabsComponent,
     PagingComponent,
     CounterComponent,
-    SimpleTableComponent
+    SimpleTableComponent,
+    SortTableComponent
   ],
   imports: [
     CommonModule,

@@ -1,7 +1,7 @@
 <table>
   <thead>
     <tr>
-      <th *ngFor="let header of tableData[0] | keyvalue : keepOrder">{{header.key}}</th>
+      <th *ngFor="let header of tableData[0] | keyvalue : keepOrder" (click)="headerSelection(header.key, header.value)">{{header.key}}</th>
     </tr>
   </thead>
 
