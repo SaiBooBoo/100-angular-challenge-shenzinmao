@@ -1,0 +1,13 @@
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let header of tableData[0] | keyvalue : keepOrder">{{header.key}}</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let row of tableData">
+      <td *ngFor="let data of row | keyvalue : keepOrder">{{data.value}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -11,7 +11,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
   declarations: [
     App,
     ToolbarComponent,
-    TopOfPage
+    TopOfPage,
   ],
   imports: [
     BrowserModule,

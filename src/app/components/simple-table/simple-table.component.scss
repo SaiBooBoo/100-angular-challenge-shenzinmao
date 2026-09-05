@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+  border-collapse: collapse; // Removes gaps between cell borders
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+th, td {
+  padding: 12px 16px; // Adds breathing room inside cells
+  text-align: left;    // Keeps text neatly aligned
+  border-bottom: 1px solid #e0e0e0; // Adds horizontal division lines
+}
+
+th {
+  background-color: #f8f9fa; // Soft background for headers
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5; // Hover effect for interactivity
+}

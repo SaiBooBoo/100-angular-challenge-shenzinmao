@@ -21,6 +21,7 @@ import { FilerTermPipeModule } from "../pipe/flatten.pipe/filer-term-pipe.module
 import { TabsComponent } from "./tabs/tabs.component";
 import { PagingComponent } from "./paging/paging.component";
 import { CounterComponent } from "./counter/counter.component";
+import { SimpleTableComponent } from "./simple-table/simple-table.component";
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { CounterComponent } from "./counter/counter.component";
     SearchListComponent,
     TabsComponent,
     PagingComponent,
-    CounterComponent
+    CounterComponent,
+    SimpleTableComponent
   ],
   imports: [
     CommonModule,
