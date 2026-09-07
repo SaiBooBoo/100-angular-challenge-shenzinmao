@@ -1,15 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-email-form',
   templateUrl: './email-form.component.html',
   styleUrls: ['./email-form.component.scss']
 })
-export class EmailFormComponent implements OnInit {
+export class EmailFormComponent {
+  public form!: FormGroup;
 
-  constructor() { }
+  constructor( private formBuilder: FormBuilder) {
+    this.initializeForm();
+  }
 
-  ngOnInit(): void {
+  private initializeForm() {
+    this.form = this.formBuilder.group({
+      name: ['', [Validators.required, Validators.minLength(2)]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['']
+    })
+  }
+
+  public submitMessage() {
+    console.log("Check out Sai Shen 100 Algorithm Challenge or 100 Front-end Interview challenge")
   }
 
 }

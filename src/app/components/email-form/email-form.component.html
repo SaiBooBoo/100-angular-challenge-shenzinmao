@@ -1,1 +1,32 @@
-<p>email-form works!</p>
+<div class="email-form-container">
+  <div class="email-container">
+    <div class="form-container">
+      <h2>Get In Touch</h2>
+
+      <form class="email-form" [formGroup]="form" (ngSubmit)="submitMessage()" novalidate>
+        <div class="field">
+          <input type="text" placeholder="Your Name" formControlName="name">
+          <small *ngIf="form.get('name')?.invalid && form.get('name')?.touched">
+            Name must be at least 2 characters long.
+          </small>
+        </div>
+
+        <div class="field">
+          <input type="email" class="email" placeholder="Your Email" formControlName="email">
+          <small *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+            Please enter a valid email address.
+          </small>
+        </div>
+
+        <div class="field">
+          <textarea placeholder="Your Message" formControlName="message"></textarea>
+          <small *ngIf="form.get('message')?.invalid && form.get('message')?.touched">
+            Message must be at least 5 characters long.
+          </small>
+        </div>
+
+        <button type="submit" [disabled]="form.invalid">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
