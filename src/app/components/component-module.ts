@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ComponentDocumentation } from "./component-documentation/component-documentation";
 import { RouterModule } from "@angular/router";
 import { COMPONENT_ROUTES } from "./component.routes";
@@ -23,6 +23,7 @@ import { PagingComponent } from "./paging/paging.component";
 import { CounterComponent } from "./counter/counter.component";
 import { SimpleTableComponent } from "./simple-table/simple-table.component";
 import { SortTableComponent } from "./sort-table/sort-table.component";
+import { EmailFormComponent } from "./email-form/email-form.component";
 
 
 @NgModule({
@@ -44,13 +45,15 @@ import { SortTableComponent } from "./sort-table/sort-table.component";
     PagingComponent,
     CounterComponent,
     SimpleTableComponent,
-    SortTableComponent
+    SortTableComponent,
+     EmailFormComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     SharedModule,
     FilerTermPipeModule,
+    ReactiveFormsModule,
     RouterModule.forChild(COMPONENT_ROUTES)
   ]
 })
